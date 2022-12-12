@@ -15,6 +15,15 @@
     }
   });
 
+  $('.nav-link').click(function(){
+    var $this = $(this);
+    if ( $('body').hasClass('menu-open') ) {
+      $('.site-menu-toggle').removeClass('open');
+      $('.js-site-navbar').fadeOut(400);
+      $('body').removeClass('menu-open');
+    }
+  });
+
 	
 	$('nav .dropdown').hover(function(){
 		var $this = $(this);
